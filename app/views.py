@@ -18,7 +18,7 @@ def student_reg(request):
         
     students=student.objects.all()
     context={'students':students}
-    return render(request,'app/template/register.html',context)
+    return render(request,'register.html',context)
     
 
 # Create your views here.
