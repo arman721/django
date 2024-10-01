@@ -4,7 +4,7 @@ from app.models import *
 
 
 def home(request):
-    return render(request,'app/template/home.html')
+    return render(request,'app/template/index.html')
 def student_reg(request):
     if request.method=='POST':
         data=request.POST
