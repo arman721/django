@@ -3,8 +3,8 @@ from django.shortcuts import redirect, render
 from app.models import *
 
 
-def home(request):
-    return render(request,'index.html')
+# def home(request):
+#     return render(request,'index.html')
 def student_reg(request):
     if request.method=='POST':
         data=request.POST
@@ -18,7 +18,7 @@ def student_reg(request):
         
     students=student.objects.all()
     context={'students':students}
-    return render(request,'register.html',context)
+    return render(request,'index.html',context)
     
 
 # Create your views here.
